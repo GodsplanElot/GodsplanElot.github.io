@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Elot Godsplan and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>ECCI.COM </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="/img/ECCI FAV ICON 2.png" type="image/x-icon">
+
+
+    <style>
+      /* Custom styling for the video gallery */
+      .video-gallery {
+          background: #f8f9fa; /* Light background color */
+          padding: 20px;
+      }
+
+      /* Custom styling for small video cards */
+      .small-video-card {
+          border: 1px solid #dee2e6; /* Border color */
+          border-radius: 5px;
+          overflow: hidden;
+          margin-bottom: 20px;
+          transition: transform 0.3s;
+      }
+
+      .small-video-card:hover {
+          transform: scale(1.05);
+      }
+
+      /* Custom styling for video titles */
+      .video-title {
+          font-size: 1em;
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
+
+      /* Custom styling for video descriptions */
+      .video-description {
+          font-size: 0.9em;
+          margin-bottom: 0;
+      }
+  </style>
+</head>
+<body>
+
+
+ <main>
+
+    <!-- The Nav Bar code start here RUSH ENGINE-->
+
+  <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom bg-body-tertiary rounded" aria-label="Eleventh navbar example ">
+          <div class="container-fluid">
+            
+                <!-- <a class="navbar-brand" img src="/img/ECCI FAV ICON update 2.png" href="#"> -->
+                  
+                  <img 
+                  class="d-inline-block aling-top"
+                  src="/img/ECCI FAV ICON update 2.png" width="39" height="39"/>
+                  <img 
+                  class="navbar-brand"
+                  src="/img/ECCIwebIcon.png" width="170px" height="42px"/>
+<!--             <a class="navbar-brand" href="#">ECCI.</a> -->
+            <button class="navbar-toggler navbar-toggler-more" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/live_streaming copy 3.html">Live Streaming</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/pages/about_ecci.html">About ecci</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/locate_church.html">Locate the church</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/tpoaf.html">The Place of a father</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/mens_ministry.html">Men's Ministry</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/women's_ministry.html">Women's Ministry</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/mens_ministry.html">Men's Ministry</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/FAQs.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="/pages/dropdown_pages/contactus.html">Contact</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </nav>
+</div>
+
+<!-- The Nav Bar code ends here-->
+
+
+<!--Video Thumbnail place Holder statrs Here-->
+<div class="container video-card-holder">
+    <div class="card video-frame">
+        <div class="video-container">
+            <video class="card-img-top w-100" controls poster="/EMPOWERED CAROUSEL Pg 1.jpg" id="videoPlayer"
+                ontimeupdate="checkTime()">
+                <source src="/_Solvettube.com_Lord_Of_The_Rings_War_In_The_North.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-btn" onclick="playVideo()">
+                <i class="bi bi-play-fill"></i>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Sunday Service With Pastor Nemi</h5>
+            <p class="card-text">Restoring Lives to Fulfil Purpose.</p>
+            <a href="your-link-url" class="btn btn-primary">Join Us Live</a>
+        </div>
+    </div>
+</div>
+
+<!--Video Thumbnail place Holder statrs Here-->
+
+
+
+<!--Video Gallery starts here-->
+
+<div class="container video-gallery">
+  <div class="row">
+
+      <!-- Small Video Card 1 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 1">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 1</h5>
+                  <p class="card-text video-description">Description of Video 1.</p>
+                  <a href="/test_icon.png" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Small Video Card 2 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 2">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 2</h5>
+                  <p class="card-text video-description">Description of Video 2.</p>
+                  <a href="video2.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      
+      <!-- Small Video Card 1 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 1">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 1</h5>
+                  <p class="card-text video-description">Description of Video 1.</p>
+                  <a href="video1.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Small Video Card 2 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 2">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 2</h5>
+                  <p class="card-text video-description">Description of Video 2.</p>
+                  <a href="video2.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      
+      <!-- Small Video Card 1 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 1">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 1</h5>
+                  <p class="card-text video-description">Description of Video 1.</p>
+                  <a href="video1.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Small Video Card 2 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 2">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 2</h5>
+                  <p class="card-text video-description">Description of Video 2.</p>
+                  <a href="video2.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      
+      <!-- Small Video Card 1 -->
+      <div class="col-md-3">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 1">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 1</h5>
+                  <p class="card-text video-description">Description of Video 1.</p>
+                  <a href="video1.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Small Video Card 2 -->
+      <div class="">
+          <div class="card small-video-card">
+              <img src="/test_icon.png" class="card-img-top" alt="Video Thumbnail 2">
+              <div class="card-body">
+                  <h5 class="card-title video-title">Video Title 2</h5>
+                  <p class="card-text video-description">Description of Video 2.</p>
+                  <a href="video2.mp4" class="btn btn-primary" target="_blank">Watch Video</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Add more small video cards as needed -->
+
+  </div>
+</div>
+
+<!--Video Gallery Ends here-->
+</main>
+
+
+
+<!--THE FOOTER STARTS HERE-->
+ <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Thites/Offering</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Events and activities</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">TPOAF</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Youth Fellowship</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Join our membership/workforce?</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Enroll School of Ministry</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Community</a></li>
+          </ul>
+        </div>
+  
+<!--         <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div> -->
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>
+                By opting to subscribe to the newsletter of Empowered Christian Church, you agree to receive recurring automated messages (such as program reminders) through automated technology, which includes email.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-custom" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2024 ECCI_Media Team, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!--THE FOOTER ENDS HERE-->
+
+
+
+
+  <button type="button" class="btn btn-custom">Custom Button</button>
+
+
+  
+    <!-- Popup -->
+<!--     <div class="popup" id="popup">
+        <p>Watch the full video live on our social media!</p>
+        <button class="btn btn-primary" onclick="closePopup()">Close</button>
+    </div> -->
+
+<!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<!--Controls the pause and play-->
+<script>
+    // Function to play or pause the video
+    function playPause() {
+        var video = document.querySelector('video');
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+</script>
+<!--Controls the pause and play-->
+
+
+
+ <!--    <script>
+        var video = document.getElementById('videoPlayer');
+        var popup = document.getElementById('popup');
+
+        function playVideo() {
+            video.play();
+        }
+
+        function checkTime() {
+            // Check if the video has reached the halfway point
+            if (video.currentTime >= video.duration / 2) {
+                // Display the popup
+                popup.style.display = 'block';
+                // Pause the video
+                video.pause();
+            }
+        }
+
+        function closePopup() {
+            // Close the popup and resume playing the video
+            popup.style.display = 'none';
+            video.play();
+        }
+    </script> -->
+</body>
+</html>
